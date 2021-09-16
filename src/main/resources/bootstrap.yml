@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: booking-service
+  cloud:
+    config:
+      uri: ${URL_CONFIG_SERVICE}
+      username:  ${CONFIG_USER}
+      password: ${CONFIG_PASSWORD}
+  boot:
+    admin:
+      client:
+        url: http://localhost:8086
